@@ -342,10 +342,10 @@ Now we'll consider cases where a visualisation of a three dimensional surface is
 
 ```{r}
 ggplot(faithfuld, aes(eruptions, waiting)) + 
-  geom_contour(aes(z = density, colour = ..level..))
+  geom_contour(aes(z = density, colour = after_stat(level)))
 ```
 
-The reference to the `..level..` variable in this code may seem confusing, because there is no variable called `..level..` in the `faithfuld` data. In this context the `..` notation refers to a variable computed internally (see Section \@ref(generated-variables)). To display the same density as a heat map, you can use `geom_raster()`:
+The reference to the `level` variable in this code may seem confusing, because there is no variable called `level` in the `faithfuld` data. In this context the `after_stat(level)` notation refers to a variable computed internally (see Section \@ref(generated-variables)). To display the same density as a heat map, you can use `geom_raster()`:
 
 ```{r}
 ggplot(faithfuld, aes(eruptions, waiting)) + 
