@@ -409,7 +409,7 @@ For more information about manual scales see Section \@ref(scale-manual).
 
 ### Limits, breaks, and labels {#colour-discrete-limits}
 
-Scale limits for discrete colour scales can be set using the `limits` argument to the scale argument, or by using the `lims()` helper function. This can be important when the same variable is represented in different plots, and you want to ensure that the colours are consistent across plots. To demonstrate this we'll extend the example from Section \@ref(position-continuous-limits). Colour represents the fuel type, which can be **r**egular, **e**thanol, **d**iesel, **p**remium or **c**ompressed natural gas.
+Scale limits for discrete colour scales can be set using the `limits` argument to the scale function, or by using the `lims()` helper function. This can be important when the same variable is represented in different plots, and you want to ensure that the colours are consistent across plots. To demonstrate this we'll extend the example from Section \@ref(position-continuous-limits). Colour represents the fuel type, which can be **r**egular, **e**thanol, **d**iesel, **p**remium or **c**ompressed natural gas.
 
 `r columns(2, 1)`
 ```{r}
