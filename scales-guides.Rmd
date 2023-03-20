@@ -195,13 +195,11 @@ Scale guides are more complex than scale names: where the `name` argument (and `
 
 The table below summarises the default guide functions associated with different scale types:
 
-| Scale type                                           | Default guide type  |       
-|:-----------------------------------------------------|:--------------------|
-| continuous scales for colour/fill aesthetics         | colourbar           |
-| binned scales for colour/fill aesthetics             | coloursteps         |
-| position scales (continuous, binned and discrete)    | axis                |
-| discrete scales (except position scales)             | legend              |
-| binned scales (except position/colour/fill scales)   | bins                |
+| Scale type  | Position   | Colour/fill  | Others     |
+|:------------|:-----------|:-------------|:-----------|
+| continuous  | axis       | colourbar    | -          |
+| binned      | axis       | coloursteps  | bins       |
+| discrete    | axis       | legend       | legend     |
 
 Each of these guide types has appeared earlier in the toolbox:
 
